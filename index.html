@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Unstable // Locator</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://unpkg.com/peerjs@1.5.4/dist/peerjs.min.js"></script>
+</head>
+<body>
+<div class="app">
+  <div class="topbar">
+    <div class="brand"><div class="logo">U</div><div><h1>UNSTABLE // LOCATOR</h1><div class="sub">Photo geography challenge • fan-made Unstable game</div></div></div>
+    <div class="stats"><div class="chip">Score <b id="score">0</b></div><div class="chip">Streak <b id="streak">0</b></div><div class="chip">Best <b id="best">0</b></div></div>
+  </div>
+  <div class="grid">
+    <aside class="panel side">
+      <h2>Game modes</h2>
+      <div class="modes" id="modeList"></div>
+      <div class="controls">
+        <label>Difficulty
+          <select id="difficulty"><option value="easy">Explorer — 3 clues</option><option value="normal" selected>Hunter — 2 clues</option><option value="hard">NULL — 1 clue</option></select>
+        </label>
+        <label>Rounds
+          <select id="roundCount"><option>5</option><option selected>10</option><option>15</option><option>20</option></select>
+        </label>
+        <button class="btn primary" id="newGame">New game</button>
+        <button class="btn ghost" id="skip">Skip round</button>
+      </div>
+      <div class="footer-note"><b>Photo Edition:</b> rounds use creator episode imagery or verified Unstable Wiki stills. Map positions remain lore-relative where exact coordinates are unverified.</div>
+    </aside>
+    <main class="panel" id="main"></main>
+  </div>
+</div>
+
+<script src="data1.js"></script>
+<script src="data2.js"></script>
+<script src="app.js"></script>
+<script src="multiplayer.js"></script>
+</body>
+</html>
